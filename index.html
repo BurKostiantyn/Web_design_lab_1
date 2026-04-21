@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Калькулятор</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Мій Калькулятор</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Про додаток</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Профіль</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Вхід</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Реєстрація</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-lg border-0 bg-light">
+                    <div class="card-body p-4">
+
+                        <ul class="nav nav-pills nav-fill mb-4" id="calcTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active fw-bold" id="standard-tab" data-bs-toggle="tab" data-bs-target="#standard" type="button" role="tab">Звичайний</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold" id="programmer-tab" data-bs-toggle="tab" data-bs-target="#programmer" type="button" role="tab">Програміст</button>
+                            </li>
+                        </ul>
+
+                        <div class="bg-white border rounded p-3 mb-4 text-end shadow-sm">
+                            <div class="text-muted small">1024 + 2048</div>
+                            <h1 class="display-4 fw-bold mb-0 text-truncate">3072</h1>
+                        </div>
+
+                        <div class="tab-content" id="calcTabContent">
+
+                            <div class="tab-pane fade show active" id="standard" role="tabpanel">
+                                <div class="row g-2">
+                                    <div class="col-3 d-grid"><button class="btn btn-danger fs-5">C</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-secondary fs-5">()</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-secondary fs-5">%</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-warning fs-5">÷</button></div>
+
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">7</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">8</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">9</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-warning fs-5">×</button></div>
+
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">4</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">5</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">6</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-warning fs-5">−</button></div>
+
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">1</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">2</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">3</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-warning fs-5">+</button></div>
+
+                                    <div class="col-6 d-grid"><button class="btn btn-light border fs-5">0</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-light border fs-5">,</button></div>
+                                    <div class="col-3 d-grid"><button class="btn btn-primary fs-5">=</button></div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="programmer" role="tabpanel">
+                                <div class="bg-white border rounded p-2 mb-3 small font-monospace text-muted shadow-sm">
+                                    <div>HEX <span class="text-dark ms-2">C00</span></div>
+                                    <div class="text-primary fw-bold">DEC <span class="ms-2">3072</span></div>
+                                    <div>OCT <span class="text-dark ms-2">6000</span></div>
+                                    <div>BIN <span class="text-dark ms-2">1100 0000 0000</span></div>
+                                </div>
+
+                                <div class="row g-2">
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-secondary btn-sm fw-bold">A</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-secondary btn-sm fw-bold">B</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-info btn-sm">AND</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-info btn-sm">OR</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-info btn-sm">NOT</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-danger btn-sm">C</button></div>
+
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-secondary btn-sm fw-bold">C</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-secondary btn-sm fw-bold">D</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-light border btn-sm">7</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-light border btn-sm">8</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-light border btn-sm">9</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-info btn-sm">XOR</button></div>
+
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-secondary btn-sm fw-bold">E</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-secondary btn-sm fw-bold">F</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-light border btn-sm">4</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-light border btn-sm">5</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-light border btn-sm">6</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-info btn-sm"><<</button></div>
+
+                                    <div class="col-4 d-grid"><button class="btn btn-outline-secondary btn-sm">MOD</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-light border btn-sm">1</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-light border btn-sm">2</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-light border btn-sm">3</button></div>
+                                    <div class="col-2 d-grid"><button class="btn btn-outline-info btn-sm">>></button></div>
+
+                                    <div class="col-4 d-grid"><button class="btn btn-outline-secondary btn-sm">CE</button></div>
+                                    <div class="col-4 d-grid"><button class="btn btn-light border btn-sm">0</button></div>
+                                    <div class="col-4 d-grid"><button class="btn btn-primary btn-sm">=</button></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">© 2026 Лабораторна робота №1. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
