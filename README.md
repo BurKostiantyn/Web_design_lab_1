@@ -4,4 +4,4 @@
 Загальне завдання:\
 Розробити статичні Web-сторінки додатку та перевірити коректне їх відображення на екранах різного розміру.
 ## Посилання на звіт:
-[Звіт до лабораторної](https://docs.google.com/document/d/1UlS7-9RkpQx3-H1jjwsLgO82KQlt9nMFDwa0EJSYciY/edit?usp=sharing)
+[Звіт до лабораторної](https://docs.google.com/document/d/1JOTZKb-PjqfQGCUWUYqYVu4udSGtwkIWCnv5Zo5ASlE/edit?usp=sharing)
